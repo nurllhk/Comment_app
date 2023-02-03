@@ -75,7 +75,8 @@ if(statement){
   
   
 
-![Adsız tasarım](https://user-images.githubusercontent.com/79688257/216473203-25872da6-3f7e-46de-a163-0b9246719b70.png) ![Adsız tasarım-2](https://user-images.githubusercontent.com/79688257/216474268-fed6e4fe-5601-4262-9ce6-0fd7b42dc661.png) ![Adsız tasarım-3](https://user-images.githubusercontent.com/79688257/216474478-cd9c7a5e-f6d5-4d3d-a09f-f5f8cb46f944.png)![Adsız tasarım-4](https://user-images.githubusercontent.com/79688257/216549598-ef534eb4-5000-4ce3-9189-46aacb87341d.png)![Adsız tasarım-5](https://user-images.githubusercontent.com/79688257/216549946-d1e034a4-0c43-4e46-9957-5d194f488273.png)
+![Adsız tasarım](https://user-images.githubusercontent.com/79688257/216473203-25872da6-3f7e-46de-a163-0b9246719b70.png) ![Adsız tasarım-2](https://user-images.githubusercontent.com/79688257/216474268-fed6e4fe-5601-4262-9ce6-0fd7b42dc661.png) ![Adsız tasarım-3](https://user-images.githubusercontent.com/79688257/216474478-cd9c7a5e-f6d5-4d3d-a09f-f5f8cb46f944.png)![Adsız tasarım-4](https://user-images.githubusercontent.com/79688257/216549598-ef534eb4-5000-4ce3-9189-46aacb87341d.png)![Adsız tasarım-5](https://user-images.githubusercontent.com/79688257/216549946-d1e034a4-0c43-4e46-9957-5d194f488273.png)![Adsız tasarım-6](https://user-images.githubusercontent.com/79688257/216550484-b243cd7d-c0ed-49dc-8979-b402a2f26655.png)
+
 
 
 
