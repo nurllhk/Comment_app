@@ -31,14 +31,14 @@ gh repo clone nurllhk/Comment_app
  
  -This project is a project that people can write about the products they use, the places they visit or the movies they watch, with a 300+ word comment and 4+ photos to share and earn money. The main income source of the project was started as adsense and ezoic. Users not only share reviews, but also spend time, resulting in a 0.0001 balance increase every 10 seconds. Each time users' reviews are viewed, an additional fee is earned on the statement. This project consists of 3 levels: the first level qualifies as 0-5000 points, the second level qualifies as 5000-10000 points and the third level is 10000+ points.
  
- 
+```sh 
  $price = 0.0001;
 
 $statment = $db->prepare("UPDATE users SET balance=balance+'$price' where id=? ");
 $statment->execute([$_GET['id']]);
 
 
-```sh
+
 if(statement){
     
     $a=$db->prepare("SELECT * FROM users where id=:id");
