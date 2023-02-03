@@ -3,6 +3,14 @@
 ![bringing original ideas to life](https://user-images.githubusercontent.com/79688257/216465440-e9e99560-c913-478e-9981-f7eac61b0996.png)
 
 
+
+
+```sh
+gh repo clone nurllhk/Comment_app
+```
+
+
+
  # Contents
   
   - [Screenshots]()
@@ -14,6 +22,8 @@
   - [API working logic]()
   
   - [Connected database]()
+  
+  - [All files](https://github.com/nurllhk/Comment_app/archive/refs/heads/main.zip)
   
   
   
@@ -38,14 +48,6 @@
 One to two paragraph statement about your product and what it does.
 
 ![](header.png)
-
-## Installation
-
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
 
 Windows:
 
