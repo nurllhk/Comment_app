@@ -27,6 +27,49 @@ gh repo clone nurllhk/Comment_app
   
   
   
+ # Overview
+ 
+ -This project is a project that people can write about the products they use, the places they visit or the movies they watch, with a 300+ word comment and 4+ photos to share and earn money. The main income source of the project was started as adsense and ezoic. Users not only share reviews, but also spend time, resulting in a 0.0001 balance increase every 10 seconds. Each time users' reviews are viewed, an additional fee is earned on the statement. This project consists of 3 levels: the first level qualifies as 0-5000 points, the second level qualifies as 5000-10000 points and the third level is 10000+ points.
+ 
+ 
+ $price = 0.0001;
+
+$statment = $db->prepare("UPDATE users SET balance=balance+'$price' where id=? ");
+$statment->execute([$_GET['id']]);
+
+
+```sh
+if(statement){
+    
+    $a=$db->prepare("SELECT * FROM users where id=:id");
+    $a->execute(['id' => $_GET['id']]);
+    $acek=$a->fetch(PDO::FETCH_ASSOC);
+    
+    $total =$acek['balance']+ 0.0001;
+    
+    // NK
+    
+    $desc = "Sitede Kalma Kazancı";
+    $time = "time_pay";
+    
+    $data_id = strtotime(date('d.m.Y H:i:s'));
+ 
+
+    $sql=$db->prepare("INSERT INTO user_balances SET u_id=?,amount=?,before_balance=?,last_balance=?,description=?,data_type=?,data_id=?");
+    $sql->execute([$_GET['id'],0.0001,$acek['balance'],$total,$desc,$time,$data_id]);
+ 
+ ```
+ 
+ * Scoring
+    * approved comment 5 points
+    * first comment on the product 6 points
+    * word rate 50 points
+    * spelling rules 8 points
+    * added photo 10 points
+    * high resolution photo 15 points
+    * comment and paragraph placement 20 points
+    
+  
   
   
   
@@ -70,28 +113,44 @@ make install
 npm test
 ```
 
+
+
+## APIs used
+
+* Users
+   
+* Messages
+  
+* Rewiev
+
+* Ads
+
+* Test
+
+* Products
+
+* Comment
+
+  
+
+
+
 ## Release History
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
+* 2.0.1
+    * photo update balance request review number and support request opening platforms from user account are finished
+    * The comments on the homepage were updated and the last added review appeared on the page.
+* 2.0.0
+    * Starting from using firebase to run google apps on google cloud platform 
+* 1.1.1
+    * Performing internal operations with API files
+* 1.0.0
+    * the design is the same as the direct web page
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Your Name – [@webdunyamda](https://twitter.com/webdunyamda) – kayanurullah538@gmail.com
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
 
 ## Contributing
 
